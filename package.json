@@ -1,0 +1,34 @@
+{
+  "name": "CCTI-CBT",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.4.1",
+    "@material-ui/icons": "^2.0.0",
+    "express": "^4.16.3",
+    "path": "^0.12.7",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-swipeable-views": "^0.12.16",
+    "react-tooltip": "^3.9.2",
+    "react-typing-animation": "^1.4.0",
+    "typeface-roboto": "^0.0.54"
+  },
+  "engines": {
+    "node": "8.9.4",
+    "npm": "5.6.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+  },
+  "description": "A computer based test for CCTI",
+  "main": "index.js",
+  "author": "Gabriel Aniora <chybesta@gmail.com>",
+  "license": "MIT"
+}
