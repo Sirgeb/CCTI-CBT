@@ -22,7 +22,7 @@ function Footer(props) {
   return (
     <div className={classes.root}>
       <Typography gutterBottom>
-        &copy; Copyright 2018 - CCTI <br/>
+        &copy; Copyright {new Date().getFullYear()} - CCTI <br/>
            Designed and developed by <span className={classes.span} data-tip="Contact Phone: +2348060230771, Email: chybesta@gmail.com"> Sirgeb </span>
       </Typography>
       <ReactTooltip place="right" type="dark" effect="float"/>
