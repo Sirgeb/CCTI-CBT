@@ -39,7 +39,7 @@ const styles = theme => ({
   instruct: {
     marginBottom: 30
   }
-});
+}); 
 
 function getSteps() {
   return ['Welcome', 'Sign-in', 'Information'];
