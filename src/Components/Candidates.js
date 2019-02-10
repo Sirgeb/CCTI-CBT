@@ -6,7 +6,7 @@ module.exports = [
     programType: 'REGULAR'
   },
   { 
-    id: 2,
+    id: 2, 
     fullName: 'OKEZIE .O. FAVOUR',
     regNo: 'CCT/AB12/05/18', 
     programType: 'REGULAR'
