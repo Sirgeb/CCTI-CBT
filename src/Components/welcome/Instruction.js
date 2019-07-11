@@ -35,7 +35,7 @@ class Instruction extends React.Component {
         <img src={image} alt="instructor" style={{width: "200px", marginBottom: 10}} />
           <Typing>
             <Typography variant="headline" component="h3">
-            <Typing.Delay ms={500} />Hi - <Typing.Delay ms={3000} />
+            <Typing.Delay ms={1000} />Hi - <Typing.Delay ms={3000} />
               {candidate === null || candidate.length === 0 ? guest : candidate[0].fullName}
               <Typing.Delay ms={500} />
             </Typography>
