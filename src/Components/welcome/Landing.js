@@ -41,7 +41,7 @@ class Landing extends React.Component {
       <div>
         <Paper className={classes.root} elevation={0}>
           <Typography variant="headline" component="h3">
-            WELCOME TO ADMAS I.T PLACE CBT {new Date().getFullYear()}
+            CCTI CBT {new Date().getFullYear()}
             </Typography>
           <Divider className={classes.divider} />
           <Typography variant="body2" component="p">

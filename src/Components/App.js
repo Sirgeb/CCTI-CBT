@@ -168,7 +168,7 @@ class App extends React.Component {
                   <Typography variant="subheading" gutterBottom>
                     Or
                   </Typography>
-                  <Button disabled title="Sorry you aint a guest" variant="contained" color="primary" onClick={this.handleGuestSignIn}>
+                  <Button variant="contained" color="primary" onClick={this.handleGuestSignIn}>
                     {activeStep === steps.length - 1 ? 'Start Test' : 'Sign in as guest'}
                   </Button>
                 </center>}
