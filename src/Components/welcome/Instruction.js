@@ -43,7 +43,7 @@ class Instruction extends React.Component {
               You have 50 questions <Typing.Delay ms={1000} />
             </Typography>
             <Typography className={classes.text} variant="body2" component="p">
-              35 minutes to answer all <Typing.Delay ms={1000} />
+              30 minutes to answer all <Typing.Delay ms={1000} />
             </Typography>
             <Typography className={classes.text} variant="body2" component="p">
               Click on <strong> Start Test</strong> to start
