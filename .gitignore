@@ -1,2 +1,2 @@
-node_modules/
-src/Components/Candidates.js
+node_modules
+./src/Componenets/Candidates.js

@@ -63,6 +63,12 @@ class pageNotFound extends Component {
     redirect: false
   }
 
+  handleGoHome = () => {
+    localStorage.setItem('candidate', JSON.stringify([]));
+    this.setState({
+      redirect: true
+    })
+  }
 
   render() {
     const { classes } = this.props;
@@ -79,7 +85,7 @@ class pageNotFound extends Component {
               </ul>
             </Typography>
           </Typing>
-          <Button variant="outlined" className={classes.btn} onClick={() => this.setState({ redirect: true })}> Go Home </Button>
+          <Button variant="outlined" className={classes.btn} onClick={this.handleGoHome}> Go Home </Button>
           <center>
             <Hidden smDown>
               <img className={classes.img} src={image} alt="response" />

@@ -59,7 +59,7 @@ module.exports = [
   },
   {
     id: 6,
-    label: '_________________computers are used for counting and calculating ',
+    label: '_________________computers are used for counting and calculation ',
     obj: {
       ques: 6,
       ans: 'Digital',
@@ -95,14 +95,14 @@ module.exports = [
   },
   {
     id: 9,
-    label: 'How many types of wrist watch do we have?',
+    label: 'which generation of computer made use of I.C?',
     obj: {
       ques: 9,
-      ans: '2',
-      opt1: '1',
-      opt2: '3',
-      opt3: '4',
-      opt4: '2'
+      ans: 'Third Generation',
+      opt1: 'First Generation',
+      opt2: 'Second Generation',
+      opt3: 'Third Generation',
+      opt4: 'Fourth Generation'
     }
   },
   {
@@ -239,14 +239,14 @@ module.exports = [
   },
   {
     id: 21,
-    label: 'GSM is an acronym for ____________',
+    label: 'The rectangular box or frame that displays the properties of an environment in the computer is ____________',
     obj: {
       ques: 21,
-      ans: 'Global system for mobile',
-      opt1: 'General street madness',
-      opt2: 'Global system for mobile',
-      opt3: 'Global street making',
-      opt4: 'Global street marketing'
+      ans: 'Window',
+      opt1: 'Start Menu',
+      opt2: 'Window',
+      opt3: 'Task bar',
+      opt4: 'Desktop'
     }
   },
   {
@@ -287,14 +287,14 @@ module.exports = [
   },
   {
     id: 25,
-    label: 'S _ r g _ _  h_ _ a _ o b _ t   (fill the blank dashes with the right letters)',
+    label: 'NDE stands for',
     obj: {
       ques: 25,
-      ans: 'i, e, b, a, s, r, o',
-      opt1: 'a, e, b, i, s, h, o',
-      opt2: 'i, e, b, w, s, p, o',
-      opt3: 'i, e, b, w, s, r, o',
-      opt4: 'i, e, b, a, s, r, o'
+      ans: 'National Directorate of Employment',
+      opt1: 'National Director of Empowerment',
+      opt2: 'National Director of Employment',
+      opt3: 'National Directorate of Empowerment',
+      opt4: 'National Directorate of Employment'
     }
   },
   {
@@ -347,7 +347,7 @@ module.exports = [
   },
   {
     id: 30,
-    label: 'What does the monitor look like?',
+    label: 'How does the monitor look like?',
     obj: {
       ques: 30,
       ans: 'Television',
@@ -535,13 +535,13 @@ module.exports = [
   },
   {
     id: 46,
-    label: '________ is one of the programs written by computer programmers to disrupt the smooth operation of the computer system',
+    label: '________ disrupts the smooth operation of the computer system',
     obj: {
       ques: 46,
-      ans: 'Trojan Horse',
+      ans: 'Virus',
       opt1: 'Syphy',
       opt2: 'Trokiter',
-      opt3: 'Trojan Horse',
+      opt3: 'Virus',
       opt4: 'sprokiter'
     }
   },

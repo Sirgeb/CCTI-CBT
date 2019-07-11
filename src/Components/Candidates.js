@@ -1,128 +1,224 @@
 module.exports = [
   { 
     id: 1,
-    fullName: 'FRANCIS .C. CONFIDENCE', 
-    regNo: 'CCT/AB31/08/18',
-    programType: 'REGULAR'
+    fullName: 'Chiamaka Ezeibe', 
+    regNo: 'ADMAS/NDE/001',
+    programType: 'BEGINNER'
   },
-  { 
-    id: 2, 
-    fullName: 'OKEZIE .O. FAVOUR',
-    regNo: 'CCT/AB12/05/18', 
-    programType: 'REGULAR'
+  {
+    id: 2,
+    fullName: 'Ozioma Eke Ukabi',
+    regNo: 'ADMAS/NDE/002',
+    programType: 'BEGINNER'
   },
   {
     id: 3,
-    fullName: 'SILAS .C. WINNER',
-    regNo: 'CCT/AB26/08/18',
-    programType: 'REGULAR'
-  }, 
+    fullName: 'Osinachi Chibutam C.',
+    regNo: 'ADMAS/NDE/003',
+    programType: 'BEGINNER'
+  },
   {
     id: 4,
-    fullName: 'IBE DANIEL OBASI',
-    regNo: 'CCT/AB27/08/18',
-    programType: 'REGULAR'
+    fullName: 'Glory Chimamkpa David',
+    regNo: 'ADMAS/NDE/004',
+    programType: 'BEGINNER'
   },
   {
     id: 5,
-    fullName: 'JOY .C. CHUKWUEMEKA',
-    regNo: 'CCT/AB20/07/18',
-    programType: 'EXECUTIVE'
+    fullName: 'Mercy Chinecherem',
+    regNo: 'ADMAS/NDE/005',
+    programType: 'BEGINNER'
   },
   {
     id: 6,
-    fullName: 'DAVID SILAS',
-    regNo: 'CCT/AB28/08/18',
-    programType: 'REGULAR'
+    fullName: 'Ogunka Sharon',
+    regNo: 'ADMAS/NDE/006',
+    programType: 'BEGINNER'
   },
   {
     id: 7,
-    fullName: 'UKO AKACHUKWU GLORY',
-    regNo: 'CCT/AB23/07/18',
-    programType: 'REGULAR'
+    fullName: 'Mgbeahuru Chinyere',
+    regNo: 'ADMAS/NDE/007',
+    programType: 'BEGINNER'
   },
   {
     id: 8,
-    fullName: 'EMMANUEL .S. BERRY',
-    regNo: 'CCT/AB32/08/18',
-    programType: 'REGULAR'
+    fullName: 'Victor Nwoko',
+    regNo: 'ADMAS/NDE/008',
+    programType: 'BEGINNER'
   },
   {
     id: 9,
-    fullName: 'UKOHA KINGSELY KALU',
-    regNo: 'CCT/AB33/08/18',
-    programType: 'REGULAR'
+    fullName: 'Okarazu Eke lekwa',
+    regNo: 'ADMAS/NDE/009',
+    programType: 'BEGINNER'
   },
   {
     id: 10,
-    fullName: 'UKO OLUOMACHI',
-    regNo: 'CCT/AB45/08/16',
-    programType: 'REGULAR'
+    fullName: 'Ekpo Chijindu Frank',
+    regNo: 'ADMAS/NDE/010',
+    programType: 'BEGINNER'
   },
   {
     id: 11,
-    fullName: 'UKOHA CHIMERE DANIEL',
-    regNo: 'CCT/AB30/08/18',
-    programType: 'REGULAR'
+    fullName: 'Ogan Chukwuemeka C.',
+    regNo: 'ADMAS/NDE/011',
+    programType: 'BEGINNER'
   },
   {
     id: 12,
-    fullName: 'EMMANUEL MIRIAN AMARACHI',
-    regNo: 'CCT/AB11/05/18',
-    programType: 'REGULAR'
+    fullName: 'Chibuzor Nwokocha',
+    regNo: 'ADMAS/NDE/012',
+    programType: 'BEGINNER'
   },
   {
     id: 13,
-    fullName: 'AKPAN PHENSON MARYANN VIVAN',
-    regNo: 'CCT/AB10/05/18',
-    programType: 'REGULAR'
+    fullName: 'Erugo Bright',
+    regNo: 'ADMAS/NDE/013',
+    programType: 'BEGINNER'
   },
   {
     id: 14,
-    fullName: 'DANIEL EMMANUEL OLUEBUBE',
-    regNo: 'CCT/AB25/08/18',
-    programType: 'REGULAR'
+    fullName: 'Okpulo Solomon Orji',
+    regNo: 'ADMAS/NDE/014',
+    programType: 'BEGINNER'
   },
   {
     id: 15,
-    fullName: 'UKOHA DAVID CHISOM',
-    regNo: 'CCT/AB29/08/18',
-    programType: 'REGULAR'
+    fullName: 'Kelly Uchenna',
+    regNo: 'ADMAS/NDE/015',
+    programType: 'BEGINNER'
   },
   {
     id: 16,
-    fullName: 'ANOKE DIVINE FAVOUR',
-    regNo: 'CCT/AB19/06/18',
-    programType: 'REGULAR'
+    fullName: 'Uwaoma Destiny',
+    regNo: 'ADMAS/NDE/016',
+    programType: 'BEGINNER'
   },
   {
     id: 17,
-    fullName: 'SILAS SUNDAY NNAMDI',
-    regNo: 'CCT/AB02/01/18',
-    programType: 'REGULAR'
+    fullName: 'Nwachukwu Godswill',
+    regNo: 'ADMAS/NDE/017',
+    programType: 'BEGINNER'
   },
   {
     id: 18,
-    fullName: 'UGOCHUKWU ESTHER CHINONYEREM',
-    regNo: 'CCT/AB17/07/18',
-    programType: 'REGULAR'
+    fullName: 'Lilian Johnson',
+    regNo: 'ADMAS/NDE/018',
+    programType: 'BEGINNER'
   },
   {
     id: 19,
-    fullName: 'AMOGU SUNNY NDUKWE',
-    regNo: 'CCT/AB22/07/18',
-    programType: 'REGULAR'
+    fullName: 'Victor Johnson',
+    regNo: 'ADMAS/NDE/019',
+    programType: 'BEGINNER'
   },
   {
     id: 20,
-    fullName: 'OBASI NKECHI GODWIN',
-    regNo: 'CCT/AB14/06/18',
-    programType: 'REGULAR'
+    fullName: 'Chigozie Chiamaka',
+    regNo: 'ADMAS/NDE/020',
+    programType: 'BEGINNER'
   },
   {
     id: 21,
-    fullName: 'EMMANUEL GODSON',
-    regNo: 'CCT/AB24/08/18',
-    programType: 'REGULAR'
+    fullName: 'Okorie Chidozie',
+    regNo: 'ADMAS/NDE/021',
+    programType: 'BEGINNER'
+  },
+  {
+    id: 22,
+    fullName: 'Michael Precious',
+    regNo: 'ADMAS/NDE/022',
+    programType: 'BEGINNER'
+  },
+  {
+    id: 23,
+    fullName: 'Egbuta Kelvin Uche',
+    regNo: 'ADMAS/NDE/023',
+    programType: 'BEGINNER'
+  },
+  {
+    id: 24,
+    fullName: 'Onwukwe Chinonso',
+    regNo: 'ADMAS/NDE/024',
+    programType: 'BEGINNER'
+  },
+  {
+    id: 25,
+    fullName: 'Obilor Jane Ugbonma',
+    regNo: 'ADMAS/NDE/025',
+    programType: 'BEGINNER'
+  },
+  {
+    id: 26,
+    fullName: 'Daniel Johnson',
+    regNo: 'ADMAS/NDE/026',
+    programType: 'BEGINNER'
+  },
+  {
+    id: 27,
+    fullName: 'Mathew Nwaobiara Esther',
+    regNo: 'ADMAS/NDE/027',
+    programType: 'BEGINNER'
+  },
+  {
+    id: 28,
+    fullName: 'Otuu Precious',
+    regNo: 'ADMAS/NDE/028',
+    programType: 'BEGINNER'
+  },
+  {
+    id: 29,
+    fullName: 'Rejoice Ikechukwu',
+    regNo: 'ADMAS/NDE/029',
+    programType: 'BEGINNER'
+  },
+  {
+    id: 30,
+    fullName: 'Emmanuel Kalu',
+    regNo: 'ADMAS/NDE/030',
+    programType: 'INTERMIDIATE'
+  },
+  {
+    id: 31,
+    fullName: 'Ukpai Victor Okorie',
+    regNo: 'ADMAS/NDE/031',
+    programType: 'INTERMIDIATE'
+  },
+  {
+    id: 32,
+    fullName: 'Onyendi Uzochukwu C.',
+    regNo: 'ADMAS/NDE/032',
+    programType: 'INTERMIDIATE'
+  },
+  {
+    id: 33,
+    fullName: 'Emezi Chinecherem Grace',
+    regNo: 'ADMAS/NDE/033',
+    programType: 'INTERMIDIATE'
+  },
+  {
+    id: 34,
+    fullName: 'Emezi Chidera SalvaJoy',
+    regNo: 'ADMAS/NDE/034',
+    programType: 'INTERMIDIATE'
+  },
+  {
+    id: 35,
+    fullName: 'Uma Ikechukwu',
+    regNo: 'ADMAS/NDE/035',
+    programType: 'INTERMIDIATE'
+  },
+  {
+    id: 36,
+    fullName: 'Wisdom Ezima',
+    regNo: 'ADMAS/NDE/036',
+    programType: 'INTERMIDIATE'
+  },
+  {
+    id: 37,
+    fullName: 'Nze Ngozi Jane',
+    regNo: 'ADMAS/NDE/037',
+    programType: 'INTERMIDIATE'
   }
 ]

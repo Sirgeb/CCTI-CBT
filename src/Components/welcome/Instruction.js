@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
+import image from '../images/instructor.png';
 import Typing from 'react-typing-animation';
 
 
@@ -31,9 +32,10 @@ class Instruction extends React.Component {
     return (
       <div>
         <Paper className={classes.root} elevation={0}>
+        <img src={image} alt="instructor" style={{width: "200px", marginBottom: 10}} />
           <Typing>
             <Typography variant="headline" component="h3">
-              Hi - <Typing.Delay ms={1000} />
+            <Typing.Delay ms={500} />Hi - <Typing.Delay ms={3000} />
               {candidate === null || candidate.length === 0 ? guest : candidate[0].fullName}
               <Typing.Delay ms={500} />
             </Typography>

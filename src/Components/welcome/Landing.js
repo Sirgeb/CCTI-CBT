@@ -41,13 +41,13 @@ class Landing extends React.Component {
       <div>
         <Paper className={classes.root} elevation={0}>
           <Typography variant="headline" component="h3">
-            WELCOME TO CCTI CBT {new Date().getFullYear()}
+            WELCOME TO ADMAS I.T PLACE CBT {new Date().getFullYear()}
             </Typography>
           <Divider className={classes.divider} />
           <Typography variant="body2" component="p">
-            I congratulate you for being opportuned to take this test for the first time. It is programmed to <br />
-            encourage and to give you a solid grasp of computer based test. Please note that you're required to answer all question.  <br />
-            The school will take record of your score for future assessment. My advice as a robot is, try to get all without failing one. Good luck
+            I congratulate you for being opportuned to take this test. It is programmed to <br />
+            put your knowledge and skill to test.  Please note that you're required to answer all question.  <br />
+            The school will take record of your score for future assessment. My advice as a Sirgeb's Robot is,  try to get all without failing one... <br />Good luck.
             </Typography>
         </Paper>
       </div>

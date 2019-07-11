@@ -121,7 +121,7 @@ class Test extends React.Component {
   }
 
   setTime = () => {
-    const examTime = Date.parse(new Date()) + (1000 * 60 * 35) - Date.parse(new Date());
+    const examTime = Date.parse(new Date()) + (1000 * 60 * 30) - Date.parse(new Date());
     this.setState({ examTime });
     this.timer = setInterval(() => this.CountDown(), 1000);
     this.remainingTime();

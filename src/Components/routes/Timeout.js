@@ -34,11 +34,11 @@ const styles = theme => ({
   img: {
     [theme.breakpoints.only('md')]: {
       height: "40%",
-      width: "65%",
+      width: "80%",
     },
     [theme.breakpoints.only('lg')]: {
       height: "40%",
-      width: "75%",
+      width: "80%",
     },
     [theme.breakpoints.only('xl')]: {
       height: "70%",
@@ -58,7 +58,7 @@ const styles = theme => ({
   }
 });
 
-class Timeout extends Component {
+class SubmitResponse extends Component {
   state = {
     candidateData: undefined,
     score: undefined,
@@ -102,13 +102,20 @@ class Timeout extends Component {
     }
   }
 
+  handleGoHome = () => {
+    localStorage.setItem('candidate', JSON.stringify([]));
+    this.setState({
+      redirect: true
+    })
+  }
+
   recordCandidate(score, candidateData) {
     let candidatesRecord = this.getCandidatesRecord();
     let candidateRecordNo;
-    const examTimeUse = 'Finished Before Time';
+    const examTimeUse = 'Timed Up';
     const guest = localStorage.getItem('guest');
 
-    if (candidatesRecord === [] || null) {
+    if (candidatesRecord === [] || null || undefined) {
       candidateRecordNo = 0
     } else {
       candidateRecordNo = candidatesRecord.length + 1;
@@ -150,32 +157,32 @@ class Timeout extends Component {
     return (
       <div>
         {candidate !== [] ? <div id="submit-response">
-          {candidate.length !== 0 || !!guest ?
+          {candidate !== [] || !!guest ?
             <Paper className={classes.root} elevation={0}>
               {this.state.redirect === true ? <Redirect to="/" /> : null}
               {!!guest ?
-                <Typing >
-                  <Typography className={classes.typo} variant="headline" component="h3">
-                    <ul className={classes.ul}>
-                      <li className={classes.li}> <Typing.Delay ms={1500} />Time Up! <Typing.Delay ms={1000} /> <strong> guest  </strong> <Typing.Delay ms={500} /> </li>
-                      <li className={classes.li}> Your score is {guestScore} <Typing.Delay ms={1500} /></li>
-                    </ul>
-                  </Typography>
-                </Typing> :
-                <Typing >
-                  <Typography className={classes.typo} variant="headline" component="h3">
-                    <ul className={classes.ul}>
-                      <li className={classes.li}> <Typing.Delay ms={1500} />Time Up! <Typing.Delay ms={1000} /> <strong> {this.state.candidateData[0].fullName}  </strong> <Typing.Delay ms={500} /> </li>
-                      <li className={classes.li}> Sirgeb's Robot has recorded your score. <Typing.Delay ms={1500} /></li>
-                      <li className={classes.li}>  You will get your print out next year. <Typing.Delay ms={1500} /> </li>
-                      <li className={classes.li}> </li>
-                      <li className={classes.li}> Sorry I made a mistake... <Typing.Delay ms={1500} /> </li>
-                      <li className={classes.li}> It will be given to you by tomorrow or next.</li>
-                    </ul>
-                  </Typography>
-                </Typing>
+              <Typing >
+              <Typography className={classes.typo} variant="headline" component="h3">
+                <ul className={classes.ul}>
+                  <li className={classes.li}> <Typing.Delay ms={1500} />Time Up! <Typing.Delay ms={1000} /> <strong> guest  </strong> <Typing.Delay ms={500} /> </li>
+                  <li className={classes.li}> Your score is {guestScore} <Typing.Delay ms={1500} /></li>
+                </ul>
+              </Typography>
+              </Typing> :
+              <Typing >
+              <Typography className={classes.typo} variant="headline" component="h3">
+                <ul className={classes.ul}>
+                  <li className={classes.li}> <Typing.Delay ms={1500} />Time Up! <Typing.Delay ms={1000} /> <strong> {this.state.candidateData[0].fullName}  </strong> <Typing.Delay ms={500} /> </li>
+                  <li className={classes.li}> Sirgeb's Robot has recorded your score <Typing.Delay ms={1500} /></li>
+                  <li className={classes.li}>  You will get your score next year <Typing.Delay ms={1500} /> </li>
+                  <li className={classes.li}> </li>
+                  <li className={classes.li}> Sorry I made a mistake... <Typing.Delay ms={1500} /> </li>
+                  <li className={classes.li}> It will be out by tomorrow or next.</li>
+                </ul>
+              </Typography>
+              </Typing>
               }
-              <Button variant="outlined" className={classes.btn} onClick={() => this.setState({ redirect: true })}> Go Home </Button>
+              <Button variant="outlined" className={classes.btn} onClick={this.handleGoHome}> Go Home </Button>
               <center>
                 <Hidden smDown>
                   <img className={classes.img} src={image} alt="response" />
@@ -190,7 +197,7 @@ class Timeout extends Component {
 }
 
 
-Timeout.propTypes = {
+SubmitResponse.propTypes = {
   classes: PropTypes.object.isRequired,
   width: PropTypes.string.isRequired,
 };
@@ -198,4 +205,4 @@ Timeout.propTypes = {
 export default compose(
   withStyles(styles),
   withWidth(),
-)(Timeout);
+)(SubmitResponse);

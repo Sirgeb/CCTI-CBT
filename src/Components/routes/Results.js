@@ -21,7 +21,8 @@ export default class Results extends Component {
 
     return (
       <center>
-        <table border="1" width="1000px" style={{ marginTop: 30 }}>
+        <h2 style={{textAlign: "center"}}>Admas I.T Place Students Result Sheet</h2>
+        <table border="1" style={{ marginTop: 30, width: "1000px" }}>
           <thead>
             <tr>
               <th> Serial No </th>
@@ -31,23 +32,29 @@ export default class Results extends Component {
               <th> No. of Questions </th>
             </tr>
           </thead>
+          
+          {!!this.state.candidatesRecord ? 
           <tbody style={{ textAlign: "center" }}>
-            {this.state.candidatesRecord.length === 0 || null ?
-              <tr>
-                <td colSpan="5"> No result found </td>
-              </tr>
-              :
-              this.state.candidatesRecord.map((candidateRecord) => (
-                <tr key={candidateRecord.candidateRecordNo}>
-                  <td> {candidateRecord.candidateRecordNo} </td>
-                  <td> {candidateRecord.candidateData[0].fullName} </td>
-                  <td> {candidateRecord.score} </td>
-                  <td> 35 mins ({candidateRecord.examTimeUse}) </td>
-                  <td> 50 </td>
-                </tr>
-              ))
+              {
+                this.state.candidatesRecord.map((candidateRecord) => (
+                  <tr key={candidateRecord.candidateRecordNo}>
+                    <td> {candidateRecord.candidateRecordNo} </td>
+                    <td> {candidateRecord.candidateData[0].fullName} </td>
+                    <td> {candidateRecord.score} </td>
+                    <td> 35 mins ({candidateRecord.examTimeUse}) </td>
+                    <td> 50 </td>
+                  </tr>
+                ))
+              }
+              </tbody> 
+             : 
+             <tbody>
+               <tr>
+                 <td colSpan="5" style={{textAlign: "center"}}> No result found </td>
+               </tr>
+             </tbody> 
             }
-          </tbody>
+            
         </table>
       </center>
     )

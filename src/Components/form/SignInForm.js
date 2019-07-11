@@ -117,8 +117,8 @@ class TextFields extends React.Component {
               <MenuItem value="">
                 <em>None</em>
               </MenuItem>
-              <MenuItem value="EXECUTIVE">EXECUTIVE</MenuItem>
-              <MenuItem value="REGULAR">REGULAR</MenuItem>
+              <MenuItem value="BEGINNER">BEGINNER</MenuItem>
+              <MenuItem value="INTERMIDIATE">INTERMIDIATE</MenuItem>
             </Select>
           </FormControl>
         </form >
