@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import image from '../images/instructor.png';
+import image from '../images/instructor.jpg';
 import Typing from 'react-typing-animation';
 
 
