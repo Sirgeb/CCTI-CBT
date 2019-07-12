@@ -54,9 +54,11 @@ class Test extends React.Component {
 
   CountDown() {
     if (this.state.examTime === 1000) {
+      localStorage.setItem("Time", "Timed Up")
       this.handleTimeOut();
     } else if (this.state.examTime > 0) {
       let countDown = this.state.examTime - 1000;
+      localStorage.setItem("Time", JSON.stringify(countDown));
       this.setState({ examTime: countDown })
     }
   }

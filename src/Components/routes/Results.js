@@ -41,7 +41,7 @@ export default class Results extends Component {
                     <td> {candidateRecord.candidateRecordNo} </td>
                     <td> {candidateRecord.candidateData[0].fullName} </td>
                     <td> {candidateRecord.score} </td>
-                    <td> 35 mins ({candidateRecord.examTimeUse}) </td>
+                    <td> 30 mins, {candidateRecord.used === `Timed Up`? `Timed Up` : `Used ${candidateRecord.used}`} </td>
                     <td> 50 </td>
                   </tr>
                 ))

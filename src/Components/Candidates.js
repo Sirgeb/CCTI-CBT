@@ -220,5 +220,23 @@ module.exports = [
     fullName: 'Nze Ngozi Jane',
     regNo: 'ADMAS/NDE/037',
     programType: 'INTERMIDIATE'
+  },
+  {
+    id: 38,
+    fullName: 'Prince Chidike Ikenna',
+    regNo: 'ADMAS/001',
+    programType: 'BEGINNER'
+  },
+  {
+    id: 39,
+    fullName: 'Obasi Ebubechukwu .C.',
+    regNo: 'ADMAS/002',
+    programType: 'BEGINNER'
+  },
+  {
+    id: 40,
+    fullName: 'Eke Chinwendu Blessing',
+    regNo: 'ADMAS/003',
+    programType: 'BEGINNER'
   }
 ]

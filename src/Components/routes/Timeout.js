@@ -34,11 +34,11 @@ const styles = theme => ({
   img: {
     [theme.breakpoints.only('md')]: {
       height: "40%",
-      width: "80%",
+      width: "85%",
     },
     [theme.breakpoints.only('lg')]: {
       height: "40%",
-      width: "80%",
+      width: "85%",
     },
     [theme.breakpoints.only('xl')]: {
       height: "70%",
@@ -112,7 +112,7 @@ class SubmitResponse extends Component {
   recordCandidate(score, candidateData) {
     let candidatesRecord = this.getCandidatesRecord();
     let candidateRecordNo;
-    const examTimeUse = 'Timed Up';
+
     const guest = localStorage.getItem('guest');
 
     if (candidatesRecord === [] || null || undefined) {
@@ -128,7 +128,7 @@ class SubmitResponse extends Component {
         score,
         candidateData,
         candidateRecordNo,
-        examTimeUse
+        used: "Timed Up"
       }
 
       candidatesRecord.push(candidateRecord);

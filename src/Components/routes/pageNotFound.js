@@ -34,11 +34,11 @@ const styles = theme => ({
   img: {
     [theme.breakpoints.only('md')]: {
       height: "40%",
-      width: "65%",
+      width: "85%",
     },
     [theme.breakpoints.only('lg')]: {
       height: "40%",
-      width: "75%",
+      width: "85%",
     },
     [theme.breakpoints.only('xl')]: {
       height: "70%",

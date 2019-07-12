@@ -109,11 +109,42 @@ class SubmitResponse extends Component {
     })
   }
 
+  leadingZero(num) {
+    if (num < 10) {
+      return '0' + num;
+    }
+
+    return num;
+  }
+
+  remainingTime(time) {
+    let seconds = this.leadingZero(Math.floor((time / 1000) % 60));
+    let minutes = this.leadingZero(Math.floor((time / 1000 / 60) % 60));
+
+    return `${minutes}:${seconds}`;
+  }
+
+  timeUsed() {
+    const timeUsed = localStorage.getItem('Time');
+    const realTime = this.remainingTime(timeUsed);
+
+    const splitTime = realTime.split(":");
+    const min = splitTime[0];
+    const sec = splitTime[1];
+
+    const actualMinutes = 30 - parseFloat(min);
+    const actualSeconds = 60 - parseFloat(sec);
+
+    const used =  `${actualMinutes - 1 } ${actualMinutes - 1 === 1 ? 'minute' : actualMinutes - 1 === 0 ? 'minute': 'minutes'} and ${actualSeconds} ${actualSeconds === 1 ? 'second' : 'seconds'}`;
+    return used;
+  }
+
   recordCandidate(score, candidateData) {
     let candidatesRecord = this.getCandidatesRecord();
     let candidateRecordNo;
-    const examTimeUse = 'Finished Before Time';
+
     const guest = localStorage.getItem('guest');
+    const timeUsed = this.timeUsed();
 
     if (candidatesRecord === [] || null || undefined) {
       candidateRecordNo = 0
@@ -128,7 +159,7 @@ class SubmitResponse extends Component {
         score,
         candidateData,
         candidateRecordNo,
-        examTimeUse
+        used: timeUsed
       }
 
       candidatesRecord.push(candidateRecord);
