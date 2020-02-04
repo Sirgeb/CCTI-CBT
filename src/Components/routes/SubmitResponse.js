@@ -38,11 +38,11 @@ const styles = theme => ({
     },
     [theme.breakpoints.only('lg')]: {
       height: "40%",
-      width: "85%",
+      width: "65%",
     },
     [theme.breakpoints.only('xl')]: {
       height: "70%",
-      width: "85%",
+      width: "70%",
     },
   },
   btn: {
@@ -195,8 +195,8 @@ class SubmitResponse extends Component {
                 <Typing >
                   <Typography className={classes.typo} variant="headline" component="h3">
                     <ul className={classes.ul}>
-                      <li className={classes.li}> <Typing.Delay ms={1500} />Hi - <Typing.Delay ms={1000} /> <strong> guest  </strong> <Typing.Delay ms={500} /> </li>
-                      <li className={classes.li}> Your score is {guestScore} <Typing.Delay ms={1500} /></li>
+                      <li className={classes.li}> <Typing.Delay ms={1500} />Hi - <Typing.Delay ms={1000} /> <strong> guest <i>!</i> </strong> <Typing.Delay ms={500} /> </li>
+                      <li className={classes.li}> You scored {guestScore} <Typing.Delay ms={1500} /></li>
                     </ul>
                   </Typography>
                 </Typing> :
