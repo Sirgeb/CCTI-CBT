@@ -10,7 +10,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
+    "react-scripts": "5.0.1",
     "react-swipeable-views": "^0.12.16",
     "react-tooltip": "^3.9.2",
     "react-typing-animation": "^1.4.0",
